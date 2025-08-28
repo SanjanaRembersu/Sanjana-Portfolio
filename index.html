@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sanjana | Web Developer</title>
+  <style>
+    /* General */
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      scroll-behavior: smooth;
+      background-color: #121212; /* Dark background */
+      color: #fff; /* Text color */
+    }
+
+    /* Navbar */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.8);
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      z-index: 1000;
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ff6b6b;
+    }
+
+    /* Hero Banner */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600') center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero h2 {
+      font-size: 48px;
+      margin: 0;
+    }
+    .hero p {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #ff6b6b;
+      color: #fff;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #ff4757;
+    }
+
+    /* Sections */
+    section {
+      padding: 100px 50px;
+      background-color: #121212;
+    }
+
+    /* About Me */
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+    #about img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Skills */
+    #skills .skill-bar {
+      background: #eee;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+    #skills .skill-bar div {
+      padding: 10px;
+      border-radius: 20px;
+      text-align: right;
+      color: white;
+      font-weight: bold;
+    }
+
+    /* Projects */
+    #projects .project-card {
+      background: #1e1e1e;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+    }
+    #projects .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    #projects .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #ff6b6b;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Contact */
+    #contact form input, #contact form textarea {
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:16px;
+      width: 100%;
+    }
+    #contact form button {
+      padding:12px 25px;
+      background:#ff6b6b;
+      color:#fff;
+      border:none;
+      border-radius:30px;
+      font-weight:bold;
+      cursor:pointer;
+    }
+    #contact a {
+      padding:12px 30px;
+      background:#4ECDC4;
+      color:#fff;
+      border-radius:30px;
+      font-weight:bold;
+      text-decoration:none;
+      display:inline-block;
+      margin-top:20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <h1>Sanjana</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Hi, I’m Sanjana 👋</h2>
+      <p>A passionate Web Developer crafting modern websites</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div style="flex:1; min-width:250px; text-align:center;">
+      <img src="https://i.ibb.co/vVnM1bC/profile-placeholder.png" alt="Sanjana">
+    </div>
+    <div style="flex:2; min-width:280px;">
+      <h2 style="font-size:32px; color:#fff; margin-bottom:20px;">About Me</h2>
+      <p style="font-size:18px; line-height:1.8;">
+        Hi 👋, I’m <b>Sanjana</b> — a passionate web developer who loves creating 
+        modern, user-friendly websites and bringing ideas to life on the internet.  
+        I specialize in <b>HTML, CSS, JavaScript</b>, and I’m constantly learning new 
+        technologies to grow my skills.
+      </p>
+      <p style="font-size:18px; line-height:1.8;">
+        I’ve already built cool projects like <b>Tastebuds Cafe</b> 🍴 and 
+        <b>BlueAura Clothing</b> 👕, and I’m on a mission to help businesses 
+        shine online with beautiful websites. 🚀
+      </p>
+      <a href="#projects" class="btn">See My Projects</a>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" style="text-align:center;">
+    <h2 style="font-size:32px; color:#fff; margin-bottom:40px;">My Skills</h2>
+    <div style="max-width:800px; margin:auto; text-align:left;">
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        HTML
+      </p>
+      <div class="skill-bar"><div style="width:95%; background:#ff6b6b;">95%</div></div>
+
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        CSS
+      </p>
+      <div class="skill-bar"><div style="width:90%; background:#4ECDC4;">90%</div></div>
+
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        JavaScript
+      </p>
+      <div class="skill-bar"><div style="width:75%; background:#45B7D1;">75%</div></div>
+
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        GitHub
+      </p>
+      <div class="skill-bar"><div style="width:80%; background:#FFA502;">80%</div></div>
+
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        Responsive Design
+      </p>
+      <div class="skill-bar"><div style="width:85%; background:#2ED573;">85%</div></div>
+
+      <p style="margin:15px 0; font-size:18px; color:#fff; display:flex; align-items:center; gap:10px;">
+        Canva
+      </p>
+      <div class="skill-bar"><div style="width:88%; background:#9B59B6;">88%</div></div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" style="text-align:center;">
+    <h2 style="font-size:32px; color:#fff; margin-bottom:40px;">My Projects</h2>
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:30px; max-width:1000px; margin:auto;">
+      <div class="project-card">
+        <img src="https://i.ibb.co/3rV2QjF/tastebuds-screenshot.png" alt="Tastebuds Cafe">
+        <div style="padding:20px; text-align:left;">
+          <h3 style="color:#fff;">Tastebuds Cafe</h3>
+          <p style="color:#ccc; font-size:15px;">Modern restaurant website with menu, contact form, responsive design.</p>
+          <a href="https://sanjanarembersu.github.io/Tastebuds-cafe/" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.ibb.co/qCkGf6s/blueaura-screenshot.png" alt="BlueAura Clothing">
+        <div style="padding:20px; text-align:left;">
+          <h3 style="color:#fff;">BlueAura Clothing</h3>
+          <p style="color:#ccc; font-size:15px;">E-commerce style clothing website with gallery, cart, responsive layout.</p>
+          <a href="https://sanjanarembersu.github.io/BlueAura-Clothing/" target="_blank">View Project</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <img src="https://i.ibb.co/album/placeholder.png" alt="Next Project">
+        <div style="padding:20px; text-align:left;">
+          <h3 style="color:#fff;">Next Project</h3>
+          <p style="color:#ccc; font-size:15px;">More amazing projects coming soon. Stay tuned!</p>
+          <a href="#">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 style="font-size:32px; color:#fff; margin-bottom:40px;">Contact Me</h2>
+    <p style="font-size:18px; color:#ccc; margin-bottom:30px;">
+      Interested in working together? Send me a message or hire me directly on Fiverr!
+    </p>
+    <div style="max-width:600px; margin:auto; text-align:left;">
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:15px;">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required rows="5"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <div style="margin-top:25px; text-align:center;">
+        <a href="https://www.fiverr.com/" target="_blank">Hire Me on Fiverr</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
+
